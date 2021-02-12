@@ -291,6 +291,10 @@ ol {
 	margin-bottom: 50px;
 }
 
+.menu-social a:hover {
+	color: #7800ff;
+}
+
 .menu-social a:last-child {
 	margin-bottom: 0;
 }
@@ -451,6 +455,10 @@ ol {
 	color: #b2b2b2;
 	margin-right: 30px;
 	margin-bottom: 10px;
+}
+
+.sm-socail a:hover {
+	color: #7800ff;
 }
 
 .sm-footer .sm-socail a:last-child {
