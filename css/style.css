@@ -505,6 +505,11 @@ ol {
 	}
 }
 
+.pa-text {
+	transform: rotate(-90deg);	
+	vertical-align: middle;
+}
+
 .pana-accordion-item,
 .hero-item {
 	display: -webkit-box;
@@ -514,13 +519,14 @@ ol {
 	-ms-flex-align: end;
 	align-items: flex-end;
 	position: relative;
+
 }
 
 .pana-accordion-item .pa-text,
 .hero-item .pa-text {
 	padding-left: 40px;
 	padding-bottom: 50px;
-	position: relative;
+	/* position: relative; */
 	z-index: 5;
 	opacity: 0;
 	top: -50px;
