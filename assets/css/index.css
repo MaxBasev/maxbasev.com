@@ -26,8 +26,8 @@
 }
 
 /*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+        # General
+        --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -55,8 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
+        # Back to top button
+        --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   display: none;
@@ -85,8 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
+        # Header
+        --------------------------------------------------------------*/
 #header {
   position: fixed;
   top: 0;
@@ -157,8 +157,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
+        # Navigation Menu
+        --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
   padding-top: 30px;
@@ -233,48 +233,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*----------------------------------------------- 
-   Progress bar 
-   -----------------------------------------------*/
-/* .progress-top, */
-/* .progress-bottom, */
-/* .progress-left  */
+        Progress bar 
+        -----------------------------------------------*/
 .progress-right {
   position: fixed;
   z-index: 999;
   background-color: #2196f3;
 }
 
-/* .progress-top,
-  .progress-bottom {
-    height: 0.35em;
-  } */
-/* .progress-left, */
 .progress-right {
   width: 0.35em;
 }
 
-/* .progress-top, */
 .progress-right {
   top: 0;
 }
 
-/* .progress-top,
-  .progress-left {
-    left: 0;
-  }
-  
-  .progress-bottom,
-  .progress-left {
-    bottom: 0;
-  } */
-/* .progress-bottom, */
 .progress-right {
   left: 1;
 }
 
 /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
+        # Sections General
+        --------------------------------------------------------------*/
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -317,8 +298,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Newsletter
-  --------------------------------------------------------------*/
+        # Newsletter Revue Form
+        --------------------------------------------------------------*/
 .newsletter .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -344,9 +325,30 @@ section {
   margin-bottom: 0;
 }
 
+.revue-form-field {
+  border: none;
+  border-bottom: 1px solid #2c2f3f;
+  background-color: transparent;
+  font-size: 32px;
+  margin-top: 25px;
+}
+
+.revue-form-actions {
+  margin-top: 10px;
+}
+
+.btn-rev {
+  background-color: transparent !important;
+}
+
+.about-btn-rev {
+  background-color: transparent !important;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
-  # Resume
-  --------------------------------------------------------------*/
+        # Resume
+        --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -410,8 +412,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Menu animation
-  --------------------------------------------------------------*/
+        # Menu animation
+        --------------------------------------------------------------*/
 .post-title {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
@@ -480,8 +482,8 @@ ul li a:hover::before {
 }
 
 /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
+        # Footer
+        --------------------------------------------------------------*/
 #footer {
   padding: 15px;
   color: #f4f6fd;
@@ -513,27 +515,9 @@ ul li a:hover::before {
   }
 }
 
-.revue-form-field {
-  border: none;
-  border-bottom: 1px solid #2c2f3f;
-  background-color: transparent;
-  font-size: 32px;
-  margin-top: 25px;
-}
-
-.revue-form-actions {
-  margin-top: 10px;
-}
-
-.btn-rev {
-  background-color: transparent !important;
-}
-
-.about-btn-rev {
-  background-color: transparent !important;
-  color: #fff;
-}
-
+/*--------------------------------------------------------------
+        # Border Animation
+        --------------------------------------------------------------*/
 .border-animation {
   --border-width: 0.1em;
   --animation-speed: 0.5s;
