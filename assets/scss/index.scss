@@ -1,6 +1,7 @@
+@import "./vars";
 @import "./normalize";
 @import "./topPost";
-@import "./vars";
+
 
 
 
@@ -15,7 +16,7 @@ body {
   }
   
   a {
-    color: #149ddd;
+    color: $mainAnimationColor;
     text-decoration: none;
   }
   
@@ -45,7 +46,7 @@ body {
     border-radius: 50px;
     right: 15px;
     bottom: 15px;
-    background: #149ddd;
+    background: $mainAnimationColor;
     color: #fff;
     transition: display 0.5s ease-in-out;
     z-index: 99999;
@@ -121,7 +122,7 @@ body {
   }
   
   #header .profile .social-links a:hover {
-    background: #149ddd;
+    background: $mainAnimationColor;
     color: #fff;
     text-decoration: none;
   }
@@ -201,7 +202,7 @@ body {
   }
   
   .mobile-nav-toggle i {
-    color: #149ddd;
+    color: $mainAnimationColor;
   }
   
   .mobile-nav-active {
@@ -306,7 +307,7 @@ Progress bar
   .newsletter .content ul i {
     font-size: 20px;
     /* padding-right: 2px; */
-    color: #149ddd;
+    color: $mainAnimationColor;
   }
   
   .newsletter .content p:last-child {
