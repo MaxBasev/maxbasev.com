@@ -5,8 +5,8 @@
   background: #040b14;
   background-image: url("../img/code-back.jpg");
   background-size: cover;
-  /* background-position: center;  */
-  /*   background-repeat: no-repeat; */
+  /* position: center;  */
+  /* repeat: no-repeat; */
 }
 
 .top-post-bg-color {
@@ -424,7 +424,7 @@ section {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #2196f3;
-  /* border-bottom: #2196f3 3px solid; */
+  /* border-bottom: $mainAnimationColor 3px solid; */
 }
 
 @media (max-width: 768px) {
@@ -624,7 +624,7 @@ ul li a:hover::before {
 }
 
 .containerz #nav_slide #dot3:hover {
-  background: #2196F3;
+  background: #2196f3;
 }
 
 .containerz #nav_slide #dot4:hover {
@@ -648,7 +648,7 @@ ul li a:hover::before {
 }
 
 #i3:checked ~ #nav_slide #dot3 {
-  background: #2196F3;
+  background: #2196f3;
 }
 
 #i4:checked ~ #nav_slide #dot4 {
@@ -713,7 +713,7 @@ ul li a:hover::before {
 .border-animation {
   --border-width: 0.1em;
   --animation-speed: 0.5s;
-  --color: #2196f3;
+  --color: $mainAnimationColor;
   color: var(--color);
   /* position: relative; */
   display: inline-block;

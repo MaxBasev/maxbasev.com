@@ -1,5 +1,6 @@
 @import "./normalize";
 @import "./topPost";
+@import "./vars";
 
 
 
@@ -222,7 +223,7 @@ body {
   .progress-right {
     position: fixed;
     z-index: 999;
-    background-color: #2196f3;
+    background-color: $mainAnimationColor;
   }
   
   /* .progress-top,
@@ -291,7 +292,7 @@ body {
     display: block;
     width: 100px;
     height: 3px;
-    background: #2196f3;
+    background: $mainAnimationColor;
     bottom: 0;
     left: 0;
   }
@@ -406,8 +407,8 @@ body {
     padding: 0;
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: #2196f3;
-    /* border-bottom: #2196f3 3px solid; */
+    text-decoration-color: $mainAnimationColor;
+    /* border-bottom: $mainAnimationColor 3px solid; */
   }
   
   @media (max-width: 768px) {
@@ -438,7 +439,7 @@ body {
     left: -100%;
     width: 100%;
     height: 4px;
-    background: #2196f3;
+    background: $mainAnimationColor;
     transition: 0.5s;
   }
   
@@ -598,7 +599,7 @@ body {
     background: #F44336;
   }
   .containerz #nav_slide #dot3:hover {
-    background: #2196F3;
+    background: $mainAnimationColor;
   }
   .containerz #nav_slide #dot4:hover {
     background: #4CAF50;
@@ -621,7 +622,7 @@ body {
   }
   
   #i3:checked ~ #nav_slide #dot3 {
-    background: #2196F3;
+    background: $mainAnimationColor;
   }
   
   #i4:checked ~ #nav_slide #dot4 {
@@ -686,7 +687,7 @@ body {
   .border-animation {
     --border-width: 0.1em;
     --animation-speed: 0.5s;
-    --color: #2196f3;
+    --color: $mainAnimationColor;
     color: var(--color);
     /* position: relative; */
     display: inline-block;

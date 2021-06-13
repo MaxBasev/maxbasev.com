@@ -4,11 +4,12 @@
   -----------------------------------------------*/
   
   .top-post-bg-img {
-    background: #040b14;
-    background-image: url('../img/code-back.jpg');
-    background-size: cover;
-    /* background-position: center;  */
-    /*   background-repeat: no-repeat; */
+    background: #040b14 {
+        image: url('../img/code-back.jpg');
+        size: cover;
+     /* position: center;  */
+     /* repeat: no-repeat; */
+}
   }
   
   .top-post-bg-color {
