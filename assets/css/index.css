@@ -537,8 +537,7 @@ ul li a:hover::before {
 .border-animation {
   --border-width: 0.1em;
   --animation-speed: 0.5s;
-  --color: $mainAnimationColor;
-  color: var(--color);
+  color: var(#2196f3);
   /* position: relative; */
   display: inline-block;
   font-size: 36px;
@@ -565,7 +564,7 @@ ul li a:hover::before {
 .border-animation:before, .border-animation:after {
   content: '';
   position: absolute;
-  background: var(--color);
+  background: var(#2196f3);
 }
 
 .border-animation:focus:before, .border-animation:hover:before {
@@ -664,22 +663,22 @@ ul li a:hover::before {
     border-left-color: transparent;
   }
   33% {
-    border-top-color: var(--color);
+    border-top-color: var(#2196f3);
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
   66% {
-    border-top-color: var(--color);
-    border-right-color: var(--color);
+    border-top-color: var(#2196f3);
+    border-right-color: var(#2196f3);
     border-bottom-color: transparent;
-    border-left-color: var(--color);
+    border-left-color: var(#2196f3);
   }
   100% {
-    border-top-color: var(--color);
-    border-right-color: var(--color);
-    border-bottom-color: var(--color);
-    border-left-color: var(--color);
+    border-top-color: var(#2196f3);
+    border-right-color: var(#2196f3);
+    border-bottom-color: var(#2196f3);
+    border-left-color: var(#2196f3);
   }
 }
 
