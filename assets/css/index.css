@@ -21,6 +21,10 @@
   font-size: 24px !important;
 }
 
+.top-post-btn:hover {
+  font-size: 28px !important;
+}
+
 .top-post-title, .top-post-text, .top-post-btn {
   padding: 15px;
 }
