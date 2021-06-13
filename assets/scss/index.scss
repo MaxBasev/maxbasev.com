@@ -687,7 +687,7 @@ body {
   .border-animation {
     --border-width: 0.1em;
     --animation-speed: 0.5s;    
-    color: var($mainAnimationColor);
+    color: $mainAnimationColor;
     /* position: relative; */
     display: inline-block;
     font-size: 36px;
@@ -713,7 +713,7 @@ body {
   .border-animation:before, .border-animation:after {
     content: '';
     position: absolute;
-    background: var($mainAnimationColor);
+    background: $mainAnimationColor;
   }
   .border-animation:focus:before, .border-animation:hover:before {
     -webkit-animation: beforeBorders var(--animation-speed) forwards ease-in-out;
@@ -880,22 +880,22 @@ body {
       border-left-color: transparent;
     }
     33% {
-      border-top-color: var($mainAnimationColor);
+      border-top-color: $mainAnimationColor;
       border-right-color: transparent;
       border-bottom-color: transparent;
       border-left-color: transparent;
     }
     66% {
-      border-top-color: var($mainAnimationColor);
-      border-right-color: var($mainAnimationColor);
+      border-top-color: $mainAnimationColor;
+      border-right-color: $mainAnimationColor;
       border-bottom-color: transparent;
-      border-left-color: var($mainAnimationColor);
+      border-left-color: $mainAnimationColor;
     }
     100% {
-      border-top-color: var($mainAnimationColor);
-      border-right-color: var($mainAnimationColor);
-      border-bottom-color: var($mainAnimationColor);
-      border-left-color: var($mainAnimationColor);
+      border-top-color: $mainAnimationColor;
+      border-right-color: $mainAnimationColor;
+      border-bottom-color: $mainAnimationColor;
+      border-left-color: $mainAnimationColor;
     }
   }
   @keyframes borderColors {
@@ -906,22 +906,22 @@ body {
       border-left-color: transparent;
     }
     33% {
-      border-top-color: var($mainAnimationColor);
+      border-top-color: $mainAnimationColor;
       border-right-color: transparent;
       border-bottom-color: transparent;
       border-left-color: transparent;
     }
     66% {
-      border-top-color: var($mainAnimationColor);
-      border-right-color: var($mainAnimationColor);
+      border-top-color: $mainAnimationColor;
+      border-right-color: $mainAnimationColor;
       border-bottom-color: transparent;
-      border-left-color: var($mainAnimationColor);
+      border-left-color: $mainAnimationColor;
     }
     100% {
-      border-top-color: var($mainAnimationColor);
-      border-right-color: var($mainAnimationColor);
-      border-bottom-color: var($mainAnimationColor);
-      border-left-color: var($mainAnimationColor);
+      border-top-color: $mainAnimationColor;
+      border-right-color: $mainAnimationColor;
+      border-bottom-color: $mainAnimationColor;
+      border-left-color: $mainAnimationColor;
     }
   }
   @-webkit-keyframes background {
