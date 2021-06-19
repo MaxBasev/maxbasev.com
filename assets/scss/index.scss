@@ -98,7 +98,7 @@ body {
     font-weight: 600;
     -moz-text-align-last: center;
     text-align-last: center;
-    font-family: "Poppins", sans-serif;
+    font-family: $postFontPoppins;
   }
   
   #header .profile h1 a, #header .profile h1 a:hover {
@@ -358,7 +358,7 @@ Progress bar
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: $postFontPoppins;
     color: #050d18;
     margin-bottom: 10px;
   }
