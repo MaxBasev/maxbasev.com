@@ -288,10 +288,10 @@ Progress bar
 
   
 /*--------------------------------------------------------------
-# Resume
+# Ongoing projects & Work
 --------------------------------------------------------------*/
 
-  .resume .resume-title {
+  .ongoing .ongoing-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
@@ -299,14 +299,14 @@ Progress bar
     color: #050d18;
   }
   
-  .resume .resume-item {
+  .ongoing .ongoing-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid #1f5297;
     position: relative;
   }
   
-  .resume .resume-item h4 {
+  .ongoing .ongoing-item h4 {
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
@@ -316,7 +316,7 @@ Progress bar
     margin-bottom: 10px;
   }
   
-  .resume .resume-item h5 {
+  .ongoing .ongoing-item h5 {
     font-size: 16px;
     background: #e4edf9;
     padding: 5px 15px;
@@ -325,19 +325,19 @@ Progress bar
     margin-bottom: 10px;
   }
   
-  .resume .resume-item ul {
+  .ongoing .ongoing-item ul {
     padding-left: 20px;
   }
   
-  .resume .resume-item ul li {
+  .ongoing .ongoing-item ul li {
     padding-bottom: 10px;
   }
   
-  .resume .resume-item:last-child {
+  .ongoing .ongoing-item:last-child {
     padding-bottom: 0;
   }
   
-  .resume .resume-item::before {
+  .ongoing .ongoing-item::before {
     content: "";
     position: absolute;
     width: 16px;
