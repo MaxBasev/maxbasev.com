@@ -4,7 +4,7 @@
   -----------------------------------------------*/
   
   .top-post-bg-img {
-    background: #040b14 {
+    background: $backgroundColor {
         image: url('../img/code-back.jpg');
         size: cover;
      /* position: center;  */
@@ -13,7 +13,7 @@
   }
   
   .top-post-bg-color {
-    background: #040b14;
+    background: $backgroundColor;
     
   }
   
