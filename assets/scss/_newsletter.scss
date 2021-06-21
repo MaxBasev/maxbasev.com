@@ -1,0 +1,50 @@
+@import "./vars";
+
+/*--------------------------------------------------------------
+# Newsletter Revue Form
+--------------------------------------------------------------*/
+.newsletter .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+  
+  .newsletter .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .newsletter .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .newsletter .content ul i {
+    font-size: 20px;
+    /* padding-right: 2px; */
+    color: $mainAnimationColor;
+  }
+  
+  .newsletter .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .revue-form-field {
+    border: none;
+    border-bottom: 1px solid #2c2f3f;
+    background-color:transparent;
+    font-size: 32px;
+    margin-top: 25px;
+  }
+  
+  .revue-form-actions {
+    margin-top: 10px;
+  }
+  
+  .btn-rev {
+    background-color: transparent !important;
+  }
+  
+  .about-btn-rev {
+    background-color: transparent !important;
+    color:#fff;
+  }
