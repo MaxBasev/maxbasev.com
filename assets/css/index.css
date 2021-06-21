@@ -497,7 +497,7 @@ section {
 .section-titlez h2 {
   font-size: 32px;
   font-weight: bold;
-  /* background: linear-gradient(-90deg, #040b14 60%, #f5f8fd 0%); */
+  /* background: linear-gradient(-90deg, $backgroundColor 60%, #f5f8fd 0%); */
   position: relative;
   text-align: left;
   padding: 10px;

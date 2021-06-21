@@ -79,7 +79,7 @@ body {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #040b14;
+    background: $backgroundColor;
     overflow-y: auto;
   }
   
@@ -256,14 +256,14 @@ Progress bar
   .section-title { 
     padding: 20px 0;
     margin-top: 20px;
-    background: linear-gradient(90deg, #040b14 40%, #FFFFFF 0%);
+    background: linear-gradient(90deg, $backgroundColor 40%, #FFFFFF 0%);
     color: #fff;
   }
   
   .section-titlez h2 {
     font-size: 32px;
     font-weight: bold;
-    /* background: linear-gradient(-90deg, #040b14 60%, #f5f8fd 0%); */
+    /* background: linear-gradient(-90deg, $backgroundColor 60%, #f5f8fd 0%); */
     position: relative;
     text-align: left;
     padding: 10px;
@@ -436,7 +436,7 @@ Progress bar
     bottom: 0;
     width: 300px;
     z-index: 9999;
-    background: #040b14;
+    background: $backgroundColor;
   }
   
   #footer .copyright {
