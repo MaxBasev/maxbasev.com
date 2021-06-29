@@ -67,6 +67,8 @@ input {
 }
 
 .center-button {
+  width: 500px;
+  margin: 50px auto;
   position: relative;
 }
 
