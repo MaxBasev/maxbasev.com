@@ -66,12 +66,6 @@ input {
   background-color: transparent;
 }
 
-.center-button {
-  width: 500px;
-  margin: 50px auto;
-  position: relative;
-}
-
 .newsletter .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -111,6 +105,9 @@ input {
 
 .btn-rev {
   background-color: transparent !important;
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
 }
 
 .about-btn-rev {
