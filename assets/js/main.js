@@ -1,18 +1,6 @@
 !(function ($) {
   "use strict";
 
-  // Hero typed
-  // if ($('.typed').length) {
-  //   var typed_strings = $(".typed").data('typed-items');
-  //   typed_strings = typed_strings.split(',')
-  //   new Typed('.typed', {
-  //     strings: typed_strings,
-  //     loop: true,
-  //     typeSpeed: 100,
-  //     backSpeed: 50,
-  //     backDelay: 2000
-  //   });
-  // }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .scrollto', function (e) {
@@ -108,11 +96,7 @@
     return false;
   });
 
-  // // jQuery counterUp
-  // $('[data-toggle="counter-up"]').counterUp({
-  //   delay: 10,
-  //   time: 1000
-  // });
+
 
   // Skills section
   $('.skills-content').waypoint(function () {
@@ -140,30 +124,8 @@
       aos_init();
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
-    // $(document).ready(function () {
-    //   $('.venobox').venobox();
-    // });
+
   });
-
-  // $("#owl").owlCarousel({
-
-  //   navigation: true, // Show next and prev buttons
-  //   slideSpeed: 300,
-  //   paginationSpeed: 400,
-  //   singleItem: true,
-
-  //   items: 1,
-  //   itemsDesktop: false,
-  //   itemsDesktopSmall: false,
-  //   itemsTablet: false,
-  //   itemsMobile: false
-
-  // });
-
-
-
-
 
 
   // Init AOS
@@ -235,10 +197,7 @@ var ProgressScroll = function () {
       var width = s.windowWidth / s.progressTotal;
       var height = s.windowHeight / s.progressTotal;
 
-      // s.top.css('width', percentage / width * 100 + '%');
       s.right.css('height', percentage / height * 100 + '%');
-      // s.bottom.css('width', (percentage - width - height) / width * 100 + '%');
-      // s.left.css('height', (percentage - width - height - width) / height * 100 + '%');
     }
   };
 }();
