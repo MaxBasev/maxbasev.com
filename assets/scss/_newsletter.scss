@@ -16,7 +16,7 @@
   height: 0;
   max-width: 100%;
   font-family: Roboto, Arial, sans-serif;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid $mainAnimationColor;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -37,7 +37,7 @@ input {
   font-size: 1.5rem;
   line-height: 3em;
   font-family: Roboto, Arial, sans-serif;
-  border-bottom: 3px solid #333333;
+  border-bottom: 3px solid $mainAnimationColor;
   background-color: transparent;
 }
 
