@@ -4,8 +4,8 @@
 # Newsletter Revue Form
 --------------------------------------------------------------*/
 .input-wrapper {
-  width: 500px;
-  margin: 50px auto;
+  // width: 500px;
+  // margin: 50px auto;
   position: relative;
 }
 
@@ -70,21 +70,29 @@ input {
     border: none;
     border-bottom: 1px solid #2c2f3f;
     background-color:transparent;
-    font-size: 32px;
-    margin-top: 25px;
+    font-size: 18px;
+    margin-top: 25px;    
+    color: $mainAnimationColor;
   }
-  
+
+  .border-subscriber{
+    border: 1px solid $mainAnimationColor;
+  }
+
   .revue-form-actions {
     margin-top: 10px;
   }
   
   .btn-rev {
     background-color: transparent !important;
-    width: 500px;
+    // width: auto;
     display: block;
+    padding: 30px;
   }
   
   .about-btn-rev {
     background-color: transparent !important;
     color:#fff;
   }
+
+  

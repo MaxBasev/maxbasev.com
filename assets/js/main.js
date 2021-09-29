@@ -1,28 +1,36 @@
 !(function ($) {
   "use strict";
 
-
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .scrollto', function (e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  $(document).on("click", ".nav-menu a, .scrollto", function (e) {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
       e.preventDefault();
       var target = $(this.hash);
       if (target.length) {
-
         var scrollto = target.offset().top;
 
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        $("html, body").animate(
+          {
+            scrollTop: scrollto,
+          },
+          1500,
+          "easeInOutExpo"
+        );
 
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
+        if ($(this).parents(".nav-menu, .mobile-nav").length) {
+          $(".nav-menu .active, .mobile-nav .active").removeClass("active");
+          $(this).closest("li").addClass("active");
         }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+        if ($("body").hasClass("mobile-nav-active")) {
+          $("body").removeClass("mobile-nav-active");
+          $(".mobile-nav-toggle i").toggleClass(
+            "icofont-navigation-menu icofont-close"
+          );
         }
         return false;
       }
@@ -35,33 +43,41 @@
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
         var scrollto = $(initial_nav).offset().top;
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        $("html, body").animate(
+          {
+            scrollTop: scrollto,
+          },
+          1500,
+          "easeInOutExpo"
+        );
       }
     }
   });
 
-  $(document).on('click', '.mobile-nav-toggle', function (e) {
-    $('body').toggleClass('mobile-nav-active');
-    $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+  $(document).on("click", ".mobile-nav-toggle", function (e) {
+    $("body").toggleClass("mobile-nav-active");
+    $(".mobile-nav-toggle i").toggleClass(
+      "icofont-navigation-menu icofont-close"
+    );
   });
 
   $(document).click(function (e) {
     var container = $(".mobile-nav-toggle");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      if ($("body").hasClass("mobile-nav-active")) {
+        $("body").removeClass("mobile-nav-active");
+        $(".mobile-nav-toggle i").toggleClass(
+          "icofont-navigation-menu icofont-close"
+        );
       }
     }
   });
 
   // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
+  var nav_sections = $("section");
+  var main_nav = $(".nav-menu, .mobile-nav");
 
-  $(window).on('scroll', function () {
+  $(window).on("scroll", function () {
     var cur_pos = $(this).scrollTop() + 200;
 
     nav_sections.each(function () {
@@ -70,12 +86,15 @@
 
       if (cur_pos >= top && cur_pos <= bottom) {
         if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
+          main_nav.find("li").removeClass("active");
         }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+        main_nav
+          .find('a[href="#' + $(this).attr("id") + '"]')
+          .parent("li")
+          .addClass("active");
       }
       if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
+        $(".nav-menu ul:first li:first").addClass("active");
       }
     });
   });
@@ -83,87 +102,85 @@
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
+      $(".back-to-top").fadeIn("slow");
     } else {
-      $('.back-to-top').fadeOut('slow');
+      $(".back-to-top").fadeOut("slow");
     }
   });
 
-  $('.back-to-top').click(function () {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+  $(".back-to-top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1500,
+      "easeInOutExpo"
+    );
     return false;
   });
 
-
-
   // Skills section
-  $('.skills-content').waypoint(function () {
-    $('.progress .progress-bar').each(function () {
-      $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    });
-  }, {
-    offset: '80%'
-  });
+  $(".skills-content").waypoint(
+    function () {
+      $(".progress .progress-bar").each(function () {
+        $(this).css("width", $(this).attr("aria-valuenow") + "%");
+      });
+    },
+    {
+      offset: "80%",
+    }
+  );
 
   // Porfolio isotope and filter
-  $(window).on('load', function () {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
+  $(window).on("load", function () {
+    var portfolioIsotope = $(".portfolio-container").isotope({
+      itemSelector: ".portfolio-item",
+      layoutMode: "fitRows",
     });
 
-    $('#portfolio-flters li').on('click', function () {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
+    $("#portfolio-flters li").on("click", function () {
+      $("#portfolio-flters li").removeClass("filter-active");
+      $(this).addClass("filter-active");
 
       portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+        filter: $(this).data("filter"),
       });
       aos_init();
     });
-
-
   });
-
 
   // Init AOS
   function aos_init() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out-back",
-      once: true
+      once: true,
     });
   }
-  $(window).on('load', function () {
+  $(window).on("load", function () {
     aos_init();
   });
-
 })(jQuery);
-
-
 
 ///-----------------------------------------
 /// Progress Scroll
 ///-----------------------------------------
 
-
-var ProgressScroll = function () {
+var ProgressScroll = (function () {
   var s = void 0;
 
   return {
     settings: function settings() {
       return {
         // top: $('.progress-top'),
-        right: $('.progress-right'),
+        right: $(".progress-right"),
         // bottom: $('.progress-bottom'),
         // left: $('.progress-left'),
         windowHeight: $(window).height(),
         windowWidth: $(window).width(),
         scrollHeight: $(document).height() - $(window).height(),
         progressTotal: $(window).height() * 2 + $(window).width() * 2,
-        scrollPosition: $(document).scrollTop()
+        scrollPosition: $(document).scrollTop(),
       };
     },
     init: function init() {
@@ -171,8 +188,8 @@ var ProgressScroll = function () {
       this.bindEvents();
     },
     bindEvents: function bindEvents() {
-      $(window).on('scroll', this.onScroll);
-      $(window).on('resize', this.onResize);
+      $(window).on("scroll", this.onScroll);
+      $(window).on("resize", this.onResize);
 
       this.progress();
     },
@@ -197,10 +214,10 @@ var ProgressScroll = function () {
       var width = s.windowWidth / s.progressTotal;
       var height = s.windowHeight / s.progressTotal;
 
-      s.right.css('height', percentage / height * 100 + '%');
-    }
+      s.right.css("height", (percentage / height) * 100 + "%");
+    },
   };
-}();
+})();
 
 // Init
 $(function () {
@@ -211,6 +228,6 @@ $(function () {
 const wrapper = document.querySelector(".input-wrapper"),
   emailInput = document.querySelector("input[type='email']");
 
-emailInput.addEventListener("keyup", event => {
+emailInput.addEventListener("keyup", (event) => {
   wrapper.setAttribute("data-text", event.target.value);
 });
