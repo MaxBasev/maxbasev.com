@@ -118,6 +118,10 @@ input {
   padding: 30px;
 }
 
+.btn-rev:hover {
+  color: #fff;
+}
+
 .about-btn-rev {
   background-color: transparent !important;
   color: #fff;
