@@ -2,398 +2,433 @@
 <html lang="en">
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-TCLNMBW');</script>
-	<!-- End Google Tag Manager -->
-	<title>Max Basev | Blog, portfolio & other stuff</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Max Basev Site. Debtor. Already failed 3 businesses. My thoughts & ideas.">
-	<meta name="author" content="Max Basev">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maxim Basev | Software Developer & SaaS Creator</title>
+
+	<!-- Meta tags -->
+	<meta name="description"
+		content="Software developer specializing in SaaS solutions, business management systems, and automation tools">
+	<meta name="author" content="Maxim Basev">
+	<meta name="theme-color" content="#2563eb">
+	<link rel="canonical" href="https://maxbasev.com">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Modern minimal CSS reset -->
+	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+	<!-- BoxIcons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 	<!-- Favicons -->
-	<link href="assets/img/favicon.png" rel="icon">
-	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-	<!-- Google Fonts -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-		rel="stylesheet">
-
-	<!-- Vendor CSS Files -->
-	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-	<!-- Template Main CSS File -->
-	<link href="assets/css/index.min.css" rel="stylesheet">
-	<!-- <meta name="cryptomus" content="28828804" /> -->
-
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" href="assets/img/favicon.png">
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCLNMBW" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-
-	<!-- ======= Mobile nav toggle button ======= -->
-	<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-	<!-- ======= Header ======= -->
-	<header id="header">
-		<div class="d-flex flex-column">
-
-			<div class="profile">
-				<a href="https://maxbasev.com"><img src="assets/img/profile-img.jpg" alt="Max Basev profile photo"
-						class="img-fluid rounded-circle"></a>
-				<h1 class="text-light"><a href="https://maxbasev.com">Max Basev</a></h1>
-				<div class="social-links mt-3 text-center">
-					<a href="https://twitter.com/maxbasev" class="twitter" target="_blank"><i
-							class="bx bxl-twitter"></i></a>
-					<a href="https://www.facebook.com/maxim.basev" class="facebook" target="_blank"><i
-							class="bx bxl-facebook"></i></a>
-					<a href="https://www.instagram.com/maxbasev/" class="instagram" target="_blank"><i
-							class="bx bxl-instagram"></i></a>
-					<a href="https://www.linkedin.com/in/maxim-basev/" class="linkedin" target="_blank"><i
-							class="bx bxl-linkedin"></i></a>
-					<a href="https://t.me/maxbasev" class="telegram" target="_blank"><i class="bx bxl-telegram"></i></a>
-				</div>
+	<header class="site-header">
+		<nav class="main-nav" role="navigation" aria-label="Main navigation">
+			<div class="logo">
+				<a href="/" aria-label="Home">MB</a>
 			</div>
+			<button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+				<i class="bx bx-menu"></i>
+			</button>
+			<ul class="nav-links" role="menubar">
+				<li role="none"><a href="#services" role="menuitem">Services</a></li>
+				<li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
+				<li role="none"><a href="#about" role="menuitem">About</a></li>
+				<li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-			<nav class="nav-menu">
-				<ul>
-					<li data-aos="fade-right" data-aos-delay="100"><a href="https://maxbasev.com"><i
-								class="bx bx-home"></i>
-							<span> Homepage</span></a>
-					</li>
-					<li data-aos="fade-right" data-aos-delay="150"><a href="https://portfolio.maxbasev.com"><i
-								class="bx bx-desktop"></i> <span>
-								Portfolio</span></a></li>
-					<li data-aos="fade-right" data-aos-delay="200"><a href="https://skazoff.com"><i
-								class="bx bx-book-bookmark"></i> <span>
-								Blog</span></a></li>
-					<li data-aos="fade-right" data-aos-delay="250"><a href="https://instagram.com/maxbasev"><i
-								class="bx bx-camera"></i>
-							Photography</a>
-					</li>
-					<!-- <li data-aos="fade-right" data-aos-delay="300"><a href="https://skazoff.com"><i
-								class="bx bx-ghost"></i>
-							Crypto/NFT</a></li> -->
-					<li data-aos="fade-right" data-aos-delay="350"><a href="http://eepurl.com/ihiecn" target="_blank"><i
-								class="bx bx-mail-send"></i>
-							Newsletter</a></li>
-				</ul>
-			</nav><!-- .nav-menu -->
-			<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-		</div>
-	</header><!-- End Header -->
-
-	<main id="main">
-
-
-		<!-- Progress Scroll -->
-		<div class="progress-right"></div>
-
-
-		<!-- Top Post -->
-		<div class="p-4 p-md-5 mb-4 text-white top-post-bg-img" data-aos="fade-left">
-			<div class="col-md-6 top-post-bg-color">
-				<h1 class="top-post-title">Welcome!</h1>
-				<h3 class="title-warning">
-					<i>
-						The website and Blog are in the process of development. Everything
-						you see now is just an early draft.
-					</i>
-				</h3>
-				<p class="top-post-text">Hi! My name is Max and I am happy to welcome you to my site!<br> You can read a
-					little
-					story about me at the link below or go directly to the section of the site you are interested in.
-				</p>
-				<p class="top-post-btn border-animation"><a href="https://maxbasev.com/about-me.html"
-						class="text-white fw-bold border-animation__inner">Continue
-						reading...</a></p>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row mb-2 ">
-
-				<!-- Left Post -->
-				<!-- <div class="col-md-6" data-aos="fade-up">
-					<div class="row g-0 border overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-						<div class="col p-4 d-flex flex-column position-static">
-							<strong class="d-inline-block mb-2 text-primary">Crypto</strong>
-							<h3 class="mb-0">NBA Top Shot</h3>
-							<div class="mb-1 text-muted">Feb 12</div>
-							<p class="card-text mb-auto">NBA Top Shot. How to buy tokens (moments) and get rich, even if
-								you know
-								nothing at all about cryptocurrencies and blockchain.</p>
-							<a href="https://blog.maxbasev.com/nba-top-shot/" class="stretched-link">Continue
-								reading</a>
-						</div>
-						<div class="col-auto d-none d-lg-block">
-							<img src="https://blog.maxbasev.com/static/2999476b11ee7c48a1b881a3be9907d6/a42c7/NBA-Top-Shot-001-MaxBasev-com.jpg"
-								alt="" class="bd-placeholder-img" width="200" height="250">
-						</div>
-					</div>
-				</div> -->
-
-				<!-- Right Post -->
-				<!-- <div class="col-md-6" data-aos="fade-up">
-					<div
-						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-						<div class="col p-4 d-flex flex-column position-static">
-							<strong class="d-inline-block mb-2 text-success">Writing</strong>
-							<h3 class="mb-0">Write about what?</h3>
-							<div class="mb-1 text-muted">Nov 11</div>
-							<p class="mb-auto">What should I write about? Where to get a topic for a post on Instagram
-								(for example)?
-								What if I’m boring?
-								©Max Basev in a fit of panic</p>
-							<a href="https://blog.maxbasev.com/write-about-what/" class="stretched-link">Continue
-								reading</a>
-						</div>
-						<div class="col-auto d-none d-lg-block">
-							<img src="https://blog.maxbasev.com/static/ac01064407238d383b6a56e17f698946/4b190/016-Typewriter.jpg"
-								alt="" class="bd-placeholder-img" width="200" height="250">
-						</div>
-					</div>
-				</div> -->
-
-			</div>
-		</div>
-
-		<!-- ======= Ongoing projects & About Work Section ======= -->
-		<section id="ongoing" class="ongoing section-bg">
-			<div class="container">
-				<div class="row">
-
-					<!-- About work -->
-					<div class="col-lg-6" data-aos="fade-up">
-						<h3 class="ongoing-title">About work</h3>
-						<div class="ongoing-item pb-0">
-							<h4>A brief description of the process of working with me</h4>
-							<!-- <p><em> - Write to me <a href="https://www.fiverr.com/users/maxbasev" target="_blank">on Fiverr</a> or any
-                  other specified
-                  way <br>
-                  - Send a statement of work (the more detailed it is, the faster and better I will do the work) <br>
-                  - We agree on a contract <br>
-                  - I get to work </em></p> -->
-							<p>
-							<ul>
-								<li>Pay for my work from $120 / hour or $500 / page.</li>
-								<li>I do not work on weekends (or pay x2 price).</li>
-								<li>Responding to messages: Monday - Friday (19:00 - 09:00 PDT / 02:00 - 16:00 UTC).
-								</li>
-								<li>Task Setting. Deadline for edits and corrections = at least 3 working days before
-									deadline.
-									Adding new functionality and features = from 1 week.</li>
-								<li>Work by the hour or by the project. If it's hourly, then we simply use any of the
-									time trackers
-									you (or I) choose to keep track of my working time. If it's project-by-project (will
-									be much more
-									expensive), then it's payment for each task/project separately.</li>
-								<li>Meetings are scheduled in advance, as are tasks and paid at the standard rate per
-									hour.</li>
-								<li>After job approval - no edits will be accepted, except for an error in previously
-									provided
-									information (phone change or similar edits). Any other changes = full payment for
-									the work.</li>
-							</ul>
-							</p>
-						</div>
-					</div>
-
-					<!-- Ongoing projects -->
-					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-						<h3 class="ongoing-title">Closed projects</h3>
-						<div class="ongoing-item">
-							<h4><a href="https://thecrazycoffee.com" target="_blank">The Crazy Coffee</a></h4>
-							<h5>2020 - ...</h5>
-							<p><b>Idea:</b> Translation of my website about coffee from Russian into English</p>
-						</div>
-						<div class="ongoing-item">
-							<h4><a href="https://coffeevarka.pro" target="_blank">Сoffeevarka</a></h4>
-							<h5>2020 - ...</h5>
-							<p><b>Idea:</b> The Russian equivalent of a site about coffee.</p>
-						</div>
-						<div class="ongoing-item">
-							<h4><a href="https://telegramformoney.com" target="_blank">Telegram for money</a></h4>
-							<h5>2020 - ...</h5>
-							<p><b>Idea:</b> Translating my instruction book on Telegram from Russian to English</p>
-						</div>
-					</div>
-				</div>
-
+	<main>
+		<section class="hero">
+			<h1>Maxim Basev</h1>
+			<h2 class="hero-subtitle">Software Developer & SaaS Creator</h2>
+			<p class="hero-text">Building innovative solutions for businesses and startups.</p>
+			<div class="hero-cta">
+				<a href="#contact" class="button primary">Start Project</a>
+				<a href="#portfolio" class="button secondary">View Work</a>
 			</div>
 		</section>
-		<!-- End Section -->
 
+		<section id="about" class="about-section">
+			<div class="section-header">
+				<h2>About Me</h2>
+			</div>
+			<div class="about-content">
+				<p>Hi, I'm Maxim Basev, a software developer with expertise in creating efficient and reliable software
+					solutions. I specialize in building custom SaaS products, automation tools, and business management
+					systems (CRUD applications and beyond). With years of experience working with businesses of all
+					sizes, I focus on delivering high-quality,
+					secure, and scalable systems tailored to meet your specific needs.</p>
+				<p>From developing automated messaging platforms to designing end-to-end business management systems, I
+					am passionate about solving complex problems through technology.</p>
+			</div>
+		</section>
 
-		<!-- ======= Newsletter Section ======= -->
-		<section id="about" class="newsletter">
-			<div class="container-fluid">
-				<div class="row justify-content-center">
-					<!-- <div class="col-12 col-md-5 col-sm-12 col-xs-12 ">
-            <div class="card px-2 py-3 p-md-4 border-subscriber">
-              <div class="d-flex p-1 m-1 row " id="div1">
-                <div id="revue-embed">
+		<section id="services" class="services-section">
+			<div class="section-header">
+				<h2>My Services</h2>
+			</div>
+			<div class="services-grid">
+				<div class="service-card" tabindex="0" role="article">
+					<h3>SaaS Solutions Development</h3>
+					<p>Building custom software-as-a-service platforms for automation and productivity.</p>
+				</div>
+				<div class="service-card" tabindex="0" role="article">
+					<h3>Business Management Systems</h3>
+					<p>Creating full-scale solutions, including dashboards, CRUD functionality, and data tracking to
+						streamline operations.</p>
+				</div>
+				<div class="service-card" tabindex="0" role="article">
+					<h3>Web Applications</h3>
+					<p>Developing modern, secure, and responsive web apps tailored to your goals.</p>
+				</div>
+				<div class="service-card" tabindex="0" role="article">
+					<h3>Automation & Bots</h3>
+					<p>Automating workflows and building bots for platforms like Telegram and Slack.</p>
+				</div>
+				<div class="service-card" tabindex="0" role="article">
+					<h3>Cryptocurrency Tools</h3>
+					<p>Designing dashboards, metrics trackers, and other solutions for blockchain-related projects.</p>
+				</div>
+			</div>
 
-                  <form action="https://www.getrevue.co/profile/maxbasev/add_subscriber" method="post" id="revue-form"
-                    name="revue-form" target="_blank">
-                    <div class="form-group">
-                      <div class="input-wrapper" data-text="">
-                        <input class="form-control revue-form-field " placeholder="Your email address..." type="email"
-                          name="member[email]" id="member_email">
-                      </div>
-                    </div>
+			<div class="work-terms">
+				<h3>Work Terms & Process</h3>
+				<div class="terms-list">
+					<div class="term-item">
+						<h4>Rates</h4>
+						<p>My standard rate is $120/hour or $500/page, depending on the project's scope and complexity.
+						</p>
+					</div>
 
-                    <div class="row">
-                      <div class="col-lg-12 mx-auto">
-                        <div class="revue-form-actions border-animation">
-                          <input class="border-animation__inner btn-rev " type="submit" value="Subscribe"
-                            name="member[subscribe]" id="member_submit">
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> -->
-					<!-- Begin Mailchimp Signup Form -->
-					<div id="mc_embed_shell">
-						<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
-							type="text/css">
-						<style type="text/css">
-							#mc_embed_signup {
-								background: #fff;
-								false;
-								clear: left;
-								font: 14px Helvetica, Arial, sans-serif;
-								width: 600px;
-							}
+					<div class="term-item">
+						<h4>Availability</h4>
+						<p>I'm available Monday to Friday, from 19:00–09:00 PDT (02:00–16:00 UTC). For work on weekends,
+							special arrangements can be made with an adjusted rate.</p>
+					</div>
 
-							/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-					           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-						</style>
-						<div id="mc_embed_signup">
-							<form
-								action="https://maxbasev.us14.list-manage.com/subscribe/post?u=dda263eda0765b2716a0f1fbf&amp;id=428560eab5&amp;f_id=007681e0f0"
-								method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-								class="validate" target="_blank">
-								<div id="mc_embed_signup_scroll">
-									<h2>Subscribe</h2>
-									<div class="indicates-required"><span class="asterisk">*</span> indicates required
-									</div>
-									<div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
-												class="asterisk">*</span></label><input type="email" name="EMAIL"
-											class="required email" id="mce-EMAIL" required="" value=""></div>
-									<div id="mce-responses" class="clear foot">
-										<div class="response" id="mce-error-response" style="display: none;"></div>
-										<div class="response" id="mce-success-response" style="display: none;"></div>
-									</div>
-									<div aria-hidden="true" style="position: absolute; left: -5000px;">
-										/* real people should not fill this in and expect good things - do not remove
-										this or risk form bot
-										signups */
-										<input type="text" name="b_dda263eda0765b2716a0f1fbf_428560eab5" tabindex="-1"
-											value="">
-									</div>
-									<div class="optionalParent">
-										<div class="clear foot">
-											<input type="submit" name="subscribe" id="mc-embedded-subscribe"
-												class="button" value="Subscribe">
-											<p style="margin: 0px auto;"><a href="http://eepurl.com/iSZ58-"
-													title="Mailchimp - email marketing made easy and fun"><span
-														style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
-															class="refferal_badge"
-															src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-															alt="Intuit Mailchimp"
-															style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
-											</p>
-										</div>
-									</div>
+					<div class="term-item">
+						<h4>Deadlines</h4>
+						<ul>
+							<li>For edits and corrections, I kindly request at least 3 business days' notice before the
+								deadline.</li>
+							<li>For new functionality or features, a minimum of 1 week is required to ensure
+								high-quality results.</li>
+						</ul>
+					</div>
+
+					<div class="term-item">
+						<h4>Billing Options</h4>
+						<ul>
+							<li><strong>Hourly:</strong> I can use your preferred time tracking tool or mine to ensure
+								full transparency.</li>
+							<li><strong>Project-Based:</strong> For fixed-price projects, payment is structured per task
+								or milestone and is ideal for more defined scopes.</li>
+						</ul>
+					</div>
+
+					<div class="term-item">
+						<h4>Meetings</h4>
+						<p>Meetings are scheduled in advance and are billed at my standard hourly rate.</p>
+					</div>
+
+					<div class="term-item">
+						<h4>Final Deliverables</h4>
+						<p>After the final approval, any updates or changes outside of the original scope will be
+							treated as new work. I'm happy to assist with any additional needs!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio" class="portfolio-section">
+			<div class="section-header">
+				<h2>Portfolio</h2>
+			</div>
+
+			<div class="portfolio-content">
+				<div class="portfolio-group background">
+					<h3>Background & Experience</h3>
+					<div class="background-content">
+						<div class="education-block">
+							<h4 class="block-title">Education</h4>
+							<div class="education-item">
+								<h4>Faculty of Information Technologies in Business</h4>
+								<p>Information Systems and Technologies, <a href="https://www.stu.ru/en"
+										target="_blank">SGUPS</a> (Siberian Transport University)</p>
+							</div>
+						</div>
+
+						<div class="experience-block">
+							<h4 class="block-title">Work Experience</h4>
+							<div class="timeline">
+								<div class="timeline-item">
+									<span class="duration">3 years</span>
+									<h4>CTO</h4>
+									<p>LLC Mindness</p>
 								</div>
-							</form>
+								<div class="timeline-item">
+									<span class="duration">1.5 years</span>
+									<h4>Developer</h4>
+									<p>iOS, C#, Android Development, Academgorodok Technopark, Novosibirsk</p>
+								</div>
+								<div class="timeline-item">
+									<span class="duration">4 years</span>
+									<h4>Engineer</h4>
+									<p>Information Computing Center, Russian Railways</p>
+								</div>
+								<div class="timeline-item">
+									<span class="duration">1.5 years</span>
+									<h4>Technician</h4>
+									<p>Department of Informatization Management (SGUPS)</p>
+								</div>
+							</div>
 						</div>
-						<script type="text/javascript"
-							src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-						<script
-							type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 					</div>
-					<!--End mc_embed_signup-->
+				</div>
+
+				<div class="portfolio-group projects">
+					<h3>Freelance Projects</h3>
+					<div class="projects-grid">
+						<div class="project-card" tabindex="0" role="article">
+							<h4>AtticPros Websites</h4>
+							<p>Developed websites for companies like atticprosinc.com, hvacpanda.com, homewizards.com,
+								and over 20 other websites.</p>
+							<div class="project-links">
+								<a href="https://atticprosinc.com" target="_blank">View Project</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Procent Team Development</h4>
+							<p>Designed and implemented a website, Telegram bot for subscription management, and an
+								admin panel for user control.</p>
+							<div class="tech-stack">
+								<span>MongoDB</span>
+								<span>Node.js</span>
+								<span>Next.js</span>
+							</div>
+							<div class="project-links">
+								<a href="https://upincrypto.pro" target="_blank">View Project</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Game Platform for Telegram Mini App</h4>
+							<p>Developed a simple "match-3" game for Telegram users.</p>
+							<div class="tech-stack">
+								<span>JavaScript</span>
+								<span>Telegram API</span>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Websites for Santa Maria Clinic</h4>
+							<p>Created websites including stmariahealth.com, an online store, and promotional landing
+								pages.</p>
+							<div class="project-links">
+								<a href="https://stmariahealth.com" target="_blank">View Project</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Booking and Management System for Clinics</h4>
+							<p>Built a system for booking and managing rooms for the clinic Sybille Health.</p>
+							<div class="project-links">
+								<a href="https://sybillehealth.com/booking" target="_blank">View Project</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Clinic Management System</h4>
+							<p>Designed a comprehensive management system for clinics, including scheduling, patient
+								data tracking, medical metrics, and a referral program.</p>
+							<div class="tech-stack">
+								<span>MongoDB</span>
+								<span>Express.js</span>
+								<span>Angular</span>
+								<span>Node.js</span>
+							</div>
+							<div class="project-links">
+								<a href="https://maxbasev.gitbook.io/santa-maria-dashboard" target="_blank">Project
+									Documentation</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Blogs</h4>
+							<p>Personal blogs in Russian and English.</p>
+							<div class="tech-stack">
+								<span>WordPress</span>
+								<span>Ghost</span>
+							</div>
+							<div class="project-links">
+								<a href="https://ru.skazoff.com" target="_blank">Russian Blog</a>
+								<a href="https://ghost.skazoff.com" target="_blank">English Blog</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Custom Websites</h4>
+							<p>My personal portfolio websites.</p>
+							<div class="project-links">
+								<a href="https://maxbasev.com" target="_blank">maxbasev.com</a>
+								<a href="https://skazoff.com" target="_blank">skazoff.com</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>SheduloBot</h4>
+							<p>Developed an automated scheduling bot for Telegram and Slack, enabling users to send
+								scheduled messages via custom bots.</p>
+							<div class="tech-stack">
+								<span>Node.js</span>
+								<span>Telegram API</span>
+								<span>Slack API</span>
+							</div>
+							<div class="project-links">
+								<a href="https://shedulobot.maxbasev.com" target="_blank">View Project</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Chrome Extension: To The Moon!</h4>
+							<p>Created a Google Chrome extension to track the top gaining cryptocurrencies in the last
+								24 hours.</p>
+							<div class="tech-stack">
+								<span>JavaScript</span>
+								<span>Chrome API</span>
+							</div>
+							<div class="project-links">
+								<a href="https://chromewebstore.google.com/detail/%F0%9F%9A%80-to-the-moon/aepcdjhplhadhedgoejeccologmjbghc"
+									target="_blank">View in Chrome Web Store</a>
+							</div>
+						</div>
+
+						<div class="project-card" tabindex="0" role="article">
+							<h4>Miscellaneous Projects</h4>
+							<p>Developed numerous websites, online stores, blogs, and other projects for various clients
+								and businesses.</p>
+							<div class="tech-stack">
+								<span>Various Technologies</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<a href="https://github.com/maxbasev" class="github-link" target="_blank">
+				<i class="bx bxl-github"></i>
+				<span>View More Projects on GitHub</span>
+			</a>
+		</section>
+
+		<section id="blog" class="blog-section">
+			<div class="section-header">
+				<h2>Blog & Resources</h2>
+			</div>
+			<div class="blog-links">
+				<a href="https://en.skazoff.com" class="blog-card" tabindex="0" role="article">
+					<h3>English Blog</h3>
+					<p>Technical insights and industry updates</p>
+				</a>
+				<a href="https://ru.skazoff.com" class="blog-card" tabindex="0" role="article">
+					<h3>Russian Blog</h3>
+					<p>Технические статьи и обновления</p>
+				</a>
 			</div>
 		</section>
-		<!-- End Newsletter Section -->
 
-		<!-- Payment section -->
-		<!-- <section id="payment">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-5 col-sm-12 col-xs-12 ">
-            <div class="card px-2 py-3 p-md-4 border-subscriber">
-              <h3 class="ongoing-title">Payment</h3>
-              <h6><i>*Minimum payment amount $100</i></h6>
-              <div class="d-flex p-1 m-1 row " id="div1">
-                <link href="https://cryptocloud.pro/widget/v2/css/app.css" rel="stylesheet">
-                <vue-widget shop_id="DTXAkBtX1MT4FbsK"
-                  api_key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjEzLCJleHAiOjg4MDQ4NDAxNDUyfQ.gTgXbumKMjyuhB2dfOH8Zmark9K71T338dlbGMK0Wzk"
-                  currency="USD" amount=></vue-widget>
-                <script src="https://cryptocloud.plus/widget/v2/js/app.js"></script>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section> -->
-		<!-- End Payment section -->
-
-
-
-	</main>
-	<!-- End #main -->
-
-	<!-- ======= Footer ======= -->
-	<footer id="footer">
-		<div class="container">
-			<div class="copyright">
-				2020 - 2024 &copy; MaxBasev
+		<section id="contact" class="contact-section">
+			<div class="section-header">
+				<h2>Contact Me</h2>
+				<p>Let's collaborate on your next project!</p>
 			</div>
 
+			<div class="contact-content">
+				<div class="contact-grid">
+					<a href="mailto:hello@maxbasev.com" class="contact-card" tabindex="0" role="article">
+						<i class="bx bx-envelope"></i>
+						<span class="text">hello@maxbasev.com</span>
+					</a>
+					<a href="https://t.me/maxbasev" class="contact-card" target="_blank" tabindex="0" role="article">
+						<i class="bx bxl-telegram"></i>
+						<span class="text">Telegram</span>
+					</a>
+					<a href="https://www.linkedin.com/in/maxim-basev" class="contact-card" target="_blank" tabindex="0"
+						role="article">
+						<i class="bx bxl-linkedin"></i>
+						<span class="text">LinkedIn</span>
+					</a>
+					<a href="https://www.fiverr.com/maxbasev" class="contact-card" target="_blank" tabindex="0"
+						role="article">
+						<i class="bx bx-store"></i>
+						<span class="text">Fiverr</span>
+					</a>
+				</div>
+
+				<div class="newsletter-signup">
+					<h3>Subscribe to My Newsletter</h3>
+					<p>Get the latest updates and insights directly in your inbox</p>
+
+					<div id="mc_embed_signup">
+						<form
+							action="https://maxbasev.us14.list-manage.com/subscribe/post?u=dda263eda0765b2716a0f1fbf&amp;id=428560eab5&amp;f_id=007681e0f0"
+							method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+							class="validate" target="_blank">
+							<div id="mc_embed_signup_scroll">
+								<div class="mc-field-group">
+									<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required
+										placeholder="Your email address">
+								</div>
+								<div style="position: absolute; left: -5000px;" aria-hidden="true">
+									<input type="text" name="b_dda263eda0765b2716a0f1fbf_428560eab5" tabindex="-1"
+										value="">
+								</div>
+								<div class="clear">
+									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+										class="button primary">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-content">
+			<p class="copyright">© 2025 Maxim Basev</p>
+			<div class="social-links">
+				<a href="https://twitter.com/maxbasev" target="_blank"><i class="bx bxl-twitter"></i></a>
+				<a href="https://www.facebook.com/maxim.basev" target="_blank"><i class="bx bxl-facebook"></i></a>
+				<a href="https://www.instagram.com/maxbasev" target="_blank"><i class="bx bxl-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/maxim-basev" target="_blank"><i class="bx bxl-linkedin"></i></a>
+				<a href="https://t.me/maxbasev" target="_blank"><i class="bx bxl-telegram"></i></a>
+				<a href="https://github.com/maxbasev" target="_blank"><i class="bx bxl-github"></i></a>
+			</div>
 		</div>
 	</footer>
-	<!-- End  Footer -->
 
-	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-	<!-- Vendor JS Files -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="assets/vendor/aos/aos.js"></script>
-	<script
-		id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/dda263eda0765b2716a0f1fbf/262b01f78104c6ec39859173a.js");</script>
-
-	<!-- Template Main JS File -->
+	<!-- Custom JS -->
 	<script src="assets/js/main.js"></script>
 
+	<button class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+		<i class="bx bx-up-arrow-alt"></i>
+	</button>
 </body>
 
 </html>
