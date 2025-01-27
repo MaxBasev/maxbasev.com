@@ -98,4 +98,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		window.addEventListener('scroll', highlightCurrentSection);
 	}
+
+	// Оптимизация обработчика скролла
+	let scrollTimeout;
+	window.addEventListener('scroll', () => {
+		if (!scrollTimeout) {
+			scrollTimeout = setTimeout(() => {
+				scrollTimeout = null;
+				// Ваш код обработки скролла
+			}, 20);
+		}
+	});
 }); 
