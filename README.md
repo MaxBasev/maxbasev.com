@@ -1,45 +1,57 @@
-# Personal Website (Legacy Version)
+# Personal Website
 
-⚠️ **Note: This is a legacy version of my [personal website](https://maxbasev.com). A new version built with Next.js is coming soon!**
-
-## Overview
-This is my personal portfolio website showcasing my projects, skills, and experience. The current version is built with vanilla HTML, CSS, and JavaScript.
+Modern, minimalist portfolio website showcasing my work as a full-stack developer and SaaS builder.
 
 ## Tech Stack
-- HTML5
-- CSS3/SCSS
-- JavaScript
-- Bootstrap
-- AOS (Animate On Scroll)
-- Isotope.js
+- **HTML5** - Semantic markup
+- **CSS3** - Custom properties, Grid, Flexbox
+- **Vanilla JavaScript** - Clean, minimal interactions
+- **Inter Font** - Modern typography
+- **BoxIcons** - Clean iconography
 
 ## Features
-- Responsive design
-- Portfolio showcase
-- Blog section
-- Contact form
-- Animated transitions
-- Progress scroll
+- 📱 **Fully Responsive** - Mobile-first design
+- ⚡ **Fast & Lightweight** - No heavy frameworks
+- 🎨 **Minimalist Design** - Clean, resume-like aesthetic
+- ♿ **Accessible** - ARIA labels, semantic HTML
+- 🔍 **SEO Optimized** - Proper meta tags and structure
+
+## Sections
+- **Hero** - Introduction with CTA buttons
+- **About** - Brief professional summary
+- **Tech Stack** - Preferred and familiar technologies
+- **Experience** - Professional timeline
+- **Education** - Academic background
+- **Contact** - Multiple contact methods
 
 ## Running Locally
-1. Clone the repository 
 ```bash
-git clone
+# Clone the repository
+git clone [repository-url]
+
+# Open in browser
+open index.html
 ```
 
-2. Open `index.html` in your browser
+Or serve with any static server:
+```bash
+# Using Python
+python -m http.server 8000
 
-## Future Plans
-🚀 The website is being rebuilt using:
-- Next.js
-- TypeScript
-- Tailwind CSS
-- More modern features and optimizations
+# Using Node.js
+npx serve .
+```
 
-Stay tuned for the updated version!
+## Design Philosophy
+This website follows a minimalist, resume-like approach:
+- Black and white color scheme
+- Clean typography
+- Structured information hierarchy
+- Fast loading times
+- No unnecessary animations or effects
 
 ## Contact
-Feel free to reach out if you have any questions or would like to collaborate.
+Questions or collaboration? Reach out via [email](mailto:from-website@maxbasev.com) or [Fiverr](https://www.fiverr.com/maxbasev).
 
 ## License
 MIT License

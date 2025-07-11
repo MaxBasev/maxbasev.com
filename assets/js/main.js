@@ -1,26 +1,35 @@
-// Intersection Observer для анимаций при скролле
-const observerOptions = {
-	root: null,
-	rootMargin: '0px',
-	threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			entry.target.classList.add('visible');
-		}
-	});
-}, observerOptions);
-
-// Добавляем класс fade-in ко всем элементам, которые хотим анимировать
-document.querySelectorAll('.service-card, .project-card, .term-item, .blog-card, .contact-card').forEach(el => {
-	el.classList.add('fade-in');
-	observer.observe(el);
-});
-
-// Scroll to top functionality
+// Mobile Navigation
 document.addEventListener('DOMContentLoaded', () => {
+	const menuToggle = document.querySelector('.menu-toggle');
+	const navLinks = document.querySelector('.nav-links');
+
+	if (menuToggle && navLinks) {
+		menuToggle.addEventListener('click', (e) => {
+			e.stopPropagation();
+			navLinks.classList.toggle('active');
+			menuToggle.setAttribute('aria-expanded',
+				menuToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+			);
+		});
+
+		// Close menu when clicking on a link
+		navLinks.querySelectorAll('a').forEach(link => {
+			link.addEventListener('click', () => {
+				navLinks.classList.remove('active');
+				menuToggle.setAttribute('aria-expanded', 'false');
+			});
+		});
+
+		// Close menu when clicking outside
+		document.addEventListener('click', (e) => {
+			if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+				navLinks.classList.remove('active');
+				menuToggle.setAttribute('aria-expanded', 'false');
+			}
+		});
+	}
+
+	// Scroll to top functionality
 	const scrollToTopButton = document.querySelector('.scroll-to-top');
 
 	if (scrollToTopButton) {
@@ -32,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 
-		scrollToTopButton.addEventListener('click', () => {
+		scrollToTopButton.addEventListener('click', (e) => {
+			e.preventDefault();
 			window.scrollTo({
 				top: 0,
 				behavior: 'smooth'
@@ -40,73 +50,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	// Mobile Navigation
-	const menuToggle = document.querySelector('.menu-toggle');
-	const navLinks = document.querySelector('.nav-links');
-
-	if (menuToggle && navLinks) {
-		menuToggle.addEventListener('click', (e) => {
-			e.stopPropagation(); // Предотвращаем всплытие события
-			navLinks.classList.toggle('active');
-			menuToggle.classList.toggle('active');
-			menuToggle.setAttribute('aria-expanded',
-				menuToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-			);
-		});
-
-		// Закрываем меню при клике на ссылку
-		navLinks.querySelectorAll('a').forEach(link => {
-			link.addEventListener('click', () => {
-				navLinks.classList.remove('active');
-				menuToggle.classList.remove('active');
-				menuToggle.setAttribute('aria-expanded', 'false');
-			});
-		});
-
-		// Закрываем меню при клике вне его
-		document.addEventListener('click', (e) => {
-			if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-				navLinks.classList.remove('active');
-				menuToggle.classList.remove('active');
-				menuToggle.setAttribute('aria-expanded', 'false');
-			}
-		});
-	}
-
-	// Добавляем активный класс для текущей секции при скролле
+	// Active navigation highlighting
 	const sections = document.querySelectorAll('section[id]');
+	const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
 
-	if (sections.length > 0) {
-		function highlightCurrentSection() {
+	if (sections.length > 0 && navItems.length > 0) {
+		function updateActiveNav() {
 			const scrollY = window.pageYOffset;
 
 			sections.forEach(section => {
 				const sectionHeight = section.offsetHeight;
 				const sectionTop = section.offsetTop - 100;
 				const sectionId = section.getAttribute('id');
-				const navLink = document.querySelector(`.nav-links a[href*=${sectionId}]`);
+				const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
 
 				if (navLink) {
 					if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+						navItems.forEach(item => item.classList.remove('active'));
 						navLink.classList.add('active');
-					} else {
-						navLink.classList.remove('active');
 					}
 				}
 			});
 		}
 
-		window.addEventListener('scroll', highlightCurrentSection);
+		// Throttled scroll handler
+		let scrollTimeout;
+		window.addEventListener('scroll', () => {
+			if (!scrollTimeout) {
+				scrollTimeout = setTimeout(() => {
+					updateActiveNav();
+					scrollTimeout = null;
+				}, 100);
+			}
+		});
 	}
-
-	// Оптимизация обработчика скролла
-	let scrollTimeout;
-	window.addEventListener('scroll', () => {
-		if (!scrollTimeout) {
-			scrollTimeout = setTimeout(() => {
-				scrollTimeout = null;
-				// Ваш код обработки скролла
-			}, 20);
-		}
-	});
 }); 
