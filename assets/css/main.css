@@ -6,17 +6,17 @@
     --color-secondary: #666666;
     --color-light: #f8f9fa;
     --color-border: #e1e5e9;
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2.5rem;
     --spacing-xl: 4rem;
-    
+
     /* Typography scale */
     --text-sm: 0.875rem;
     --text-base: 1rem;
@@ -25,13 +25,13 @@
     --text-2xl: 1.5rem;
     --text-3xl: 1.875rem;
     --text-4xl: 2.25rem;
-    
+
     /* Font weights */
     --font-normal: 400;
     --font-medium: 500;
     --font-semibold: 600;
     --font-bold: 700;
-    
+
     /* Other */
     --border-radius: 4px;
     --max-width: 800px;
@@ -147,6 +147,22 @@ main {
     gap: var(--spacing-sm);
 }
 
+.hero-secondary {
+    margin-top: var(--spacing-sm);
+}
+
+.hero-link {
+    font-size: var(--text-sm);
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.hero-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 /* Buttons */
 .button {
     display: inline-flex;
@@ -231,6 +247,12 @@ section:last-of-type {
 
 .about-content a:hover {
     text-decoration-thickness: 2px;
+}
+
+.legal-note {
+    color: var(--color-secondary);
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-sm);
 }
 
 /* Tech stack section */
@@ -479,11 +501,11 @@ section:last-of-type {
     .main-nav {
         position: relative;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
     .nav-links {
         display: none;
         position: absolute;
@@ -497,64 +519,64 @@ section:last-of-type {
         padding: var(--spacing-sm);
         gap: var(--spacing-sm);
     }
-    
+
     .nav-links.active {
         display: flex;
     }
-    
+
     .hero {
         padding: calc(80px + var(--spacing-lg)) 0 var(--spacing-lg);
     }
-    
+
     .hero h1 {
         font-size: var(--text-3xl);
     }
-    
+
     .hero-subtitle {
         font-size: var(--text-base);
     }
-    
+
     .hero-cta {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
     }
-    
+
     .tech-tags span {
         font-size: 0.75rem;
         padding: 0.2rem 0.4rem;
     }
-    
+
     .timeline-item {
         grid-template-columns: 1fr;
         gap: var(--spacing-xs);
         padding-bottom: var(--spacing-sm);
     }
-    
+
     .timeline-item .duration {
         text-align: left;
         font-size: var(--text-sm);
         margin-bottom: var(--spacing-xs);
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: var(--spacing-sm);
         text-align: center;
     }
-    
+
     main {
         padding: 0 var(--spacing-sm);
     }
-    
+
     .site-header {
         padding: var(--spacing-sm);
     }
@@ -575,4 +597,4 @@ section:last-of-type {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-} 
+}
